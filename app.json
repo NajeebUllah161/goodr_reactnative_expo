@@ -11,13 +11,25 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyBpxZdF3WpkuAJkxmnyJgrfWdFSdpvYT10"
+      },
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "This app is able to attach photo from your photo library",
+        "NSCameraUsageDescription": "This app uses the camera to make a photo",
+        "LSApplicationQueriesSchemes ": ["lyft", "fb", "linkedin"],
+        "UIBackgroundModes": ["remote-notification"]
+      }
     },
     "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBM4hy8c2lBHTA2frqg7-VDRey2q4Uj9oM"
+        }
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"

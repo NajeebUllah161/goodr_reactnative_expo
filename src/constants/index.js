@@ -1,0 +1,11 @@
+import {
+  COLORS_PRIMARY,
+  SIZES,
+  FONTS,
+  WEIGHTS,
+  APP_STRINGS,
+  SCREENS,
+} from './theme';
+import ASSETS from './assets';
+
+export {COLORS_PRIMARY, SIZES, FONTS, WEIGHTS, ASSETS, APP_STRINGS, SCREENS};
