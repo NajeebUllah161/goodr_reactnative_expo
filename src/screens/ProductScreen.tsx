@@ -375,7 +375,6 @@ const styles = StyleSheet.create({
   container: {
     flex: SIZES.flex1,
     width: "auto",
-    // backgroundColor: "red"
   },
   item: {
     backgroundColor: COLORS_PRIMARY.white,

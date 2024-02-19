@@ -33,9 +33,10 @@ import apiCall from "../redux/actions/apiCall";
 import { consoleLog } from "../utils/Reusables";
 import { useFonts } from "expo-font";
 import * as Location from "expo-location";
-import ImageViewer from "../components/ImageViewer";
-// import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
 import MapView from "../components/mymap";
+
+/* Uncomment this for imageviewer - 1 */
+// import ImageViewer from "../components/ImageViewer";
 
 export type ProductDetailScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -68,12 +69,12 @@ const ProductDetailScreen = ({
     longitudeDelta: 0.01544952392579546,
   });
 
-  // Related to image viewer, uncomment this as well please.
-  const images = [
-    {
-      uri: image,
-    },
-  ];
+  /* Uncomment this for imageviewer - 2 */
+  // const images = [
+  //     {
+  //       uri: image,
+  //     },
+  //   ];
 
   useEffect(() => {
     fetchProductDetails();
@@ -179,7 +180,7 @@ const ProductDetailScreen = ({
         {IS_WEB ? (
           <MapView.MapView
             provider="google"
-            // Idid not have Google Maps API, Please add here to see the result on web browser..
+            // I did not have Google Maps API, Please add here to see the result on web browser..
             // googleMapsApiKey="AIzaSyBM4hy8c2lBHTA2frqg7-VDRey2q4Uj9oM"
             loadingFallback={
               <View>
